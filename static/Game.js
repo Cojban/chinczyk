@@ -52,8 +52,6 @@ class Game {
         this.renderer = new THREE.WebGLRenderer();
         this.renderer.setClearColor(0x90ee90);
         this.renderer.setSize(window.innerWidth, window.innerHeight);
-        this.axes = new THREE.AxesHelper(1000);
-        this.scene.add(this.axes);
         this.camera.position.set(0, 500, 501);
         this.camera.lookAt(this.scene.position);
         this.geometry = new THREE.BoxGeometry(50, 5, 50);
